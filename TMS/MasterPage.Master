@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
     Inherits="TMS.MasterPage" %>
 
 <!DOCTYPE html>
@@ -39,11 +39,11 @@
 <body>
     <form id="form1" runat="server">
         <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top header-transparent">
+        <header id="header" class="fixed-top">
             <div class="container">
 
                 <div class="logo float-left">
-                    <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1>
+                    <h1 class="text-light"><a href="index.html"><span>Deewan</span></a></h1>
                     <!-- Uncomment below if you prefer to use an image logo -->
                     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
                 </div>
@@ -53,8 +53,8 @@
                         <li class="active"><a href="Default.aspx">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Team</a></li>
+                        <%--<li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Team</a></li>--%>
                         <li><a href="#">Blog</a></li>
                         <li class="drop-down"><a href="">Drop Down</a>
                             <ul>
@@ -74,6 +74,8 @@
                             </ul>
                         </li>
                         <li><a href="ContactUs.aspx">Contact Us</a></li>
+                         <li><a href="../signupredirectionaspx.aspx" class="btn btn-info mx-2">Sign Up</a></li>
+                         <li><a href="loginredirection.aspx" class="btn btn-info mx-2">Login</a></li>
                     </ul>
                 </nav>
                 <!-- .nav-menu -->
@@ -82,10 +84,10 @@
         </header>
         <!-- End Header -->
 
-        <div>
+      <main id="main">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-        </div>
+        </main>
         <!-- ======= Footer ======= -->
         <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
@@ -134,20 +136,20 @@
                         <div class="col-lg-3 col-md-6 footer-contact">
                             <h4>Contact Us</h4>
                             <p>
-                                A108 Adam Street
+                              Greater Noida
                                 <br>
-                                New York, NY 535022<br>
-                                United States
+                               Greater Noida <br>
+                                India
                                 <br>
                                 <br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                <strong>Phone:</strong> +91 9315613498<br>
+                                <strong>Email:</strong> ayushdhruv449@gmail.com<br>
                             </p>
 
                         </div>
 
                         <div class="col-lg-3 col-md-6 footer-info">
-                            <h3>About Moderna</h3>
+                            <h3>About Deewan</h3>
                             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa
                                 magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.
                             </p>
